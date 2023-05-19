@@ -1,6 +1,7 @@
 import { Node } from './Node.js';
+import { Sorter } from './Sorter.js';
 
-export class LinkedList {
+export class LinkedList extends Sorter {
   head: Node | null = null;
 
   add(data: number): void {

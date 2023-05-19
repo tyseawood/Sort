@@ -1,6 +1,8 @@
 import { Node } from './Node.js';
-export class LinkedList {
+import { Sorter } from './Sorter.js';
+export class LinkedList extends Sorter {
     constructor() {
+        super(...arguments);
         this.head = null;
     }
     add(data) {
